@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/homepage/ico.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+<!-- Home Page -->
+  <body>
+    <div id="first-page" class="first-page">
+      <section class="welcome">
+          <img alt="Logo de la página" src="images/homepage/logo.png" width="70"/>
+          <div class="plataforma-container">
+            <h1 id="span">Welcome to platform 9 ¾</h1>
+          </div>
+        <p>Explore the magic world of Harry Potter here</p>
+      </section>
+      <section class ="menu">
+        <article class="boxes">
+            <img alt="Personajes" src="images/homepage/personajes.png" class="width-img"/>
+            <button type="button" class="home-buttons" id="first-button">Characters</button>
+        </article>
+        <article class="boxes">
+          <img alt="Hechizos" src="images/homepage/Hechizos.png" class="width-img"/> 
+          <button class=home-buttons>Spells</button>
+        </article>
+        <article class="boxes">
+          <img alt="Pociones" src="images/homepage/pociones.png" class="width-img"/>
+          <button class="home-buttons">Potions</button>
+        </article>
+        <article class="boxes">
+          <img alt="Libros" src="images/homepage/libros.png" class="width-img"/>
+          <button class="home-buttons" id="fourth-button">Books</button>
+        </article>
+      </section>
+    </div>
+    <!-- Characters page -->
+    <div id="second-page" class="second-page">
+      <div>
+        <nav class="first-bar">
+          <img alt="Logo de la página" src="images/homepage/logo.png" width="80"/>
+          <a href="">Spells</a>
+          <a href="">Potions</a>
+          <a href="">Books</a>
+        </nav>
+      </div>
+      <!--Imagen de la página de personajes-->
+      <section class="three-friends">
+          <div class="character-container">
+            <h2 class="friends-title">Harry Potter Characters</h2>
+            <p class="friends-pa"> Discover all the Harry Potter characters and learn more about them and their world!</p>
+          </div>
+      </section>
+      <!-- Categorias -->
+      <div class="select-container">
+        <select id="houses" class="select">
+          <option value="AllHouses">All houses</option>
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Slytherin">Slytherin</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Hufflepuff">Hufflepuff</option>            
+        </select>
+         
+        <select id="species" class="select">
+          <option value="allSpecies">All species</option>
+          <option value="Humans">Humans</option>
+          <option value="Magical">Magical ones</option>
+        </select>
+          
+        <select id="order" class="select">
+          <option disabled selected>Sort by</option>
+          <option value="order-up">A - Z</option>
+          <option value="order-down">Z - A</option>
+        </select>
+      </div>
+      <br>
+
+      <!--contenedor de info personajes-->
+      <div id="charactersContainer" class="charactersCard">
+        <!--Characters Container-->
+      </div>
+    </div>
+    
+    <!-- Books page-->
+    <a name="#cc"></a>
+    <div id="fourth-page" class="books-page">
+      <nav class="first-bar">
+        <img alt="Logo de la página" src="images/homepage/logo.png" width="70" />
+        <a href="">Characters</a>
+        <a href="">Spells</a>
+        <a href="">Potions</a>
+      </nav>
+
+       <!--Imagen de la página de libros-->
+       <section class="book-reading">
+          <div class="book-container">
+          <h2 class="book-title">Harry Potter Books</h2>
+          <p class="book-paragraph"> The first Harry Potter book was published in 1997 to immediate popular and critical acclaim. Six further best-selling books, three companion books, a playscript and two screenplays have since followed.</p>
+         </div>
+       </section>
+      
+      <!-- Category of books -->
+      <section class="books-select">
+        <select id="books" class="select-books">
+          <option disabled selected> All books </option>
+          <option value="order-oldest">From oldest</option>
+          <option value="order-recent">Most recent</option>>
+        </select>
+      </section>   
+
+      <!--Contenedor de info de los libros-->
+      <section id="books-container" class="books-card"> </section>
+    </div>
+    <script src="main.js" type="module"></script>
+    </html>
+  </body>
+    
+    
+    
+    
