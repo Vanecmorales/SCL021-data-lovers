@@ -1,0 +1,425 @@
+body {
+  margin: 0%;
+  padding: 0;
+}
+
+* {
+  outline: 1px solid limegreen !important;
+}
+/* Home page */
+.first-page {
+  background-image: url(images/homepage/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 90px;
+}
+
+p {
+  font-family: poppins;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/*Efecto máquina de escribir*/
+.plataforma-container {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#span {
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 23ch;
+  color: rgba(255, 255, 255, 1);
+  font-size: 35px;
+  font-family: Cinzel Decorative;
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*Media del homepage*/
+@media (max-width: 780px) {
+  #span {
+    font-size: 22px;
+  }
+  .welcome p {
+    font-size: 19px;
+  }
+  .home-buttons {
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 4%;
+  font-family: Cinzel Decorative;
+  color: rgba(255, 255, 255, 1);
+}
+
+.width-img {
+  width: 70%;
+  margin: 10px;
+}
+
+.boxes {
+  width: 25%;
+  height: 230px;
+  min-width: 200px;
+  border: none;
+  color: none;
+}
+
+.home-buttons {
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 7px;
+  padding: 0;
+  height: 45px;
+  width: 150px;
+  border: none;
+  font-family: Cinzel Decorative;
+  color: rgba(102, 36, 43, 1);
+  font-size: 16px;
+}
+
+/* Characters page(Second-page) */
+
+/*Menú con otras páginas*/
+.second-page {
+  background-color: #11141b;
+  min-height: 100vh;
+  display: none;
+}
+
+.first-bar {
+  margin-left: 38px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.first-bar > a {
+  font-family: Cinzel Decorative;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+/*Imagen de inicio página de personajes*/
+.three-friends {
+  min-height: 70vh;
+  background: url(./images/homepage/characterpage.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+}
+.character-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 5%;
+  max-width: 50%;
+  height: auto;
+}
+.friends-title {
+  font-family: Cinzel Decorative;
+  font-size: 48px;
+  color: #66242b;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.friends-pa {
+  font-family: poppins;
+  color: rgb(17, 20, 27);
+  font-size: 22px;
+  line-height: 2em;
+  width: 90%;
+  text-align: center;
+}
+
+/*Selectores para filtrar y ordenar*/
+.select {
+  background-color: rgba(102, 36, 43, 1);
+  border-radius: 14px;
+  font-family: poppins;
+  height: 40px;
+  width: 150px;
+  border-color: #ffffff;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.select-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 6%;
+  padding: 0%;
+  margin: 6% 0% 2% 0%;
+}
+
+/*Characters Card: second page*/
+.divCharacters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2%;
+}
+.divCard1 {
+  font-family: Cinzel Decorative;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+  border-color: #f2e0c5;
+  width: 30%;
+  padding: 2%;
+  margin: 1%;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divCard1 p {
+  font-size: 20px;
+  margin: 1%;
+}
+/* Fondo de las tarjetas de personajes */
+.gryffindorCard {
+  background-image: url(images/casas/gryffindor.jpg);
+}
+
+.slytherinCard {
+  background-image: url(images/casas/slytherin.jpg);
+}
+
+.ravenclawCard {
+  background-image: url(images/casas/ravenclaw.jpg);
+}
+
+.hufflepuffCard {
+  background-image: url(images/casas/hufflepuff.jpg);
+}
+
+.nullCard {
+  background-image: url(images/casas/escudo.png);
+  background-size: 30%;
+  background-position: right;
+}
+/*Media queries - Characters page*/
+
+@media (max-width: 992px) {
+  .first-bar {
+    font-size: 14px;
+  }
+  .three-friends {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    background-color: #ffffff;
+  }
+  .friends-title {
+    font-size: 20px;
+  }
+  .friends-pa {
+    font-size: 16px;
+    margin: 0%;
+  }
+  .select {
+    height: 40px;
+    width: 110px;
+    border-color: #ffffff;
+    font-size: 12px;
+  }
+
+  .divCard1 {
+    font-size: 10px;
+    background-repeat: no-repeat;
+  }
+  .divCard1 p {
+    font-size: 12px;
+  }
+}
+
+/* Books page(fourth-page) */
+/*Imagen de portada de la cuarta página*/
+.books-page {
+  background-color: #11141b;
+  min-height: 100vh;
+  display: none;
+}
+.book-reading {
+  width: 100%;
+  min-height: 70vh;
+  color: white;
+  background-image: url(./images/homepage/bookpage.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.book-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 60px;
+  width: 50%;
+  height: auto;
+}
+
+.book-title {
+  font-family: Cinzel Decorative;
+  font-size: 50px;
+  color: #11141b;
+  width: 75%;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.book-paragraph {
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 2em;
+  width: 75%;
+}
+
+/*Selector sort para libros*/
+.books-select {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.select-books {
+  background-color: rgba(208, 175, 82, 1);
+  border-radius: 14px;
+  font-family: poppins;
+  height: 40px;
+  width: 150px;
+  border-color: #ffffff;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin: 4% 0% 4% 0%;
+}
+
+/* Contenedor de la data de libros*/
+#books-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divBook {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/*Cada tarjeta*/
+.bookCard {
+  display: flex;
+  flex-flow: column wrap;
+  width: 30%;
+  margin: 2%;
+  align-items: center;
+}
+
+/*Titulo de las tarjetas*/
+.divBookTitle {
+  font-family: Cinzel Decorative;
+  color: rgba(208, 175, 82, 1);
+  font-size: 20px;
+  text-align: center;
+}
+/*Parrafo de libros*/
+.divContent {
+  padding: 0%;
+  margin-bottom: 0%;
+  font-family: poppins;
+  font-size: 15px;
+  text-align: start;
+  width: 100%;
+}
+/*Imagenes*/
+.divImgBook {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 1%;
+}
+
+/*Media queries - Books page*/
+@media (max-width: 992px) {
+  .book-reading {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    background-color: rgba(208, 175, 82, 1);
+    background-image: url(./images/homepage/friends.png);
+  }
+  .book-container {
+    margin-left: 5%;
+  }
+
+  .book-title {
+    font-size: 22px;
+  }
+
+  .book-paragraph {
+    font-size: 14px;
+    color: #11141b;
+    font-weight: bolder;
+  }
+
+  .select-books {
+    font-size: 14px;
+  }
+
+  .divImgBook {
+    width: 150px;
+    height: 250px;
+  }
+
+  .divBookTitle {
+    font-size: 14px;
+  }
+
+  .divContent {
+    font-size: 14px;
+  }
+}
