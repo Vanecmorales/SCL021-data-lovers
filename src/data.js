@@ -34,14 +34,14 @@ export const sortDataDown = (characters) => {
 };
 
 //Page four sort books
+const comparador = (a, b) => {
+  return a.id > b.id ? 1 : -1;
+}
+
 export function olderBooks(books) {
-  books.sort((a, b) => {
-    return a.id > b.id ? 1 : -1;
-  });
+  return books.sort(comparador);
 }
 
 export function recentBooks(books) {
-  books.sort((a, b) => {
-    return a.id < b.id ? 1 : -1;
-  });
+  return books.reverse(comparador);
 }
